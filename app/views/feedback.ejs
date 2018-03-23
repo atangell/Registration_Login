@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    FeedBack Form
+  </title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='./Content/app.css' />
+  
+</head>
+
+
+<body>
+<div class="container">
+  <div class="row-md-10">
+      <div class="col-md-8">
+   
+          <form class="form-control" action="/thankyou" method="post">
+          <fieldset>
+            <legend class="tite text-center"> <%= title %></legend>
+    
+            <!-- First Name input-->
+            <div class="form-group">
+              <label>First Name</label>
+              
+                <input id="name" name="firstName" value= <%= firstName %> placeholder="First Name" class="form-control" readonly>
+              
+           
+              <label class="control-label">Last Name</label>
+              
+                <input id="lastname" name="lastName" value=<%= lastName %> placeholder="Last Name" class="form-control" readonly>
+              
+            </div>
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="control-label">Your E-mail</label>
+             
+                <input id="email" name="email" type="text" value = <%= email %> placeholder="Your email" class="form-control" readonly>
+              
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="control-label">Your message</label>
+              
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              
+            </div>
+
+            <div class="form-group">
+            <label class="control-label">Country</label>
+             
+                <input id="country" name="country" value=<%= country %> placeholder="Your country" class="form-control" readonly>
+              
+            </div>
+
+            <div class="form-group">
+            <label class="control-label">Your Gender</label>
+             
+                <input id="country" name="gender" value=<%= gender %> placeholder="Your country" class="form-control" readonly>
+              
+            </div>
+
+            <div class="form-group">
+            <label class="control-label">Your Language</label>
+             
+                <input id="country" name="language" value=<%= language %> placeholder="Your country" class="form-control" readonly>
+              
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+
+</div>
+
+    
+
+<!-- JavaScript Section -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="./Scripts/core/app.js"></script>
+</body>
+
+</html>

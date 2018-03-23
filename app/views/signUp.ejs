@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= title %>
+    </title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel='stylesheet' href='./Content/app.css' />
+</head>
+
+
+<div class="container">
+    <div class="row-md-10">
+        <form class="form-horizontal" method="POST" action="/login">
+
+            <!-- Form Name -->
+            <legend>Registration</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Name">First Name</label>
+                <div class="col-md-5">
+                    <input id="Name" name="firstName" type="text" placeholder="First Name" class="form-control input-md" required="">
+
+                </div>
+                <label class="col-md-4 control-label" for="Name">Last Name</label>
+                <div class="col-md-5">
+                    <input id="Name" name="lastName" type="text" placeholder="Last Name" class="form-control input-md" required="">
+
+                </div>
+
+            </div>
+
+            <!-- Password inpuvt-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                <div class="col-md-5">
+                    <input id="passwordinput" name="password" type="password" placeholder="" class="form-control input-md" required="">
+                    <span class="help-block">max 16 characters</span>
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="gender">Gender</label>
+                <div class="col-md-4">
+                    <label class="radio-inline" for="gender-0">
+                        <input type="radio" name="gender" id="gender-0" value="Male" checked="checked"> Male
+                    </label>
+                    <label class="radio-inline" for="gender-1">
+                        <input type="radio" name="gender" id="gender-1" value="Female"> Female
+                    </label>
+                </div>
+            </div>
+
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="country">Country</label>
+                <div class="col-md-5">
+                    <select id="country" name="country" class="form-control">
+                        <option value="India">India</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Aland Islands">Aland Islands</option>
+                        <option value="Algeria">Albania</option>
+                        <option value="">Algeria</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="emailId">Email Id</label>
+                <div class="col-md-6">
+                    <input id="emailId" type="email" name="email" type="text" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Select Multiple -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="languages">Languages Known</label>
+                <div class="col-md-5">
+                    <select id="languages" name="language" class="form-control" multiple="multiple">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="submit"></label>
+                <div class="col-md-4">
+                    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

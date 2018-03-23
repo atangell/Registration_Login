@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='./Content/app.css' />
+
+</head>
+
+<body>
+
+  <form action="/feedback" method="POST" name="userform">
+    <div class="container">
+      <div class="row-md-2">
+        <div class="col-md-offset-5 col-md-15">
+          <div class="form-login">
+            <h4>Welcome, Please Login to Continue</h4>
+            <input type="email" id="userName" name="userName" class="form-control input-sm chat-input col-md-3" placeholder="username"
+              class="form-control input-md" required="">
+            </br>
+            <input type="password" id="userPassword" name="password" placeholder="Password" class="form-control input-sm chat-input col-md-3" placeholder="password"
+              required="" />
+            </br>
+            <div class="wrapper">
+              <button class="btn btn-primary btn-md" />login
+              <i class="fa fa-sign-in"></i>
+              </button>
+
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    
+  </form>
+  <form action="/signup" method="POST">
+    <span>
+      <strong>New User? </strong>
+      <button class="btn btn-primary btn-sm" type="submit">Register</button> here</span>
+  </form>
+
+  <!-- JavaScript Section -->
+  <script src="./jquery/dist/jquery.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./Scripts/core/app.js"></script>
+</body>
+
+</html>
