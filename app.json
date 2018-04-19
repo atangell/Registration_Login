@@ -1,0 +1,9 @@
+{
+    "name": "ResgistrationLogin: Node.js",
+    "description": "A Node.js app using Express",
+    "repository": "https://github.com/atangell/Registration_Login",
+    "logo": "https://i.pinimg.com/originals/c5/b7/52/c5b752cc0bf052877e4057d6cb4d7203.png",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+  }
+  
